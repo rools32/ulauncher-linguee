@@ -33,7 +33,7 @@ class KeywordQueryEventListener(EventListener):
                     name='Define words on Linguee',
                     description='Define words "{}".'.format(event.get_argument()),
                     on_enter=OpenUrlAction(
-                        'https://www.linguee.com/english-portuguese/search?{}'.format(urlencode({ 'source': 'auto', 'query': event.get_argument() }))
+                        'https://www.linguee.com/english-french/search?{}'.format(urlencode({ 'source': 'auto', 'query': event.get_argument() }))
                     )
                 )
             )
